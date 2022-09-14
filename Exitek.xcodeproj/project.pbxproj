@@ -14,6 +14,8 @@
 		9C12366628D0D2F0006D24BA /* Exitek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C12366428D0D2F0006D24BA /* Exitek.xcdatamodeld */; };
 		9C12366828D0D2F1006D24BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C12366728D0D2F1006D24BA /* Assets.xcassets */; };
 		9C12366B28D0D2F1006D24BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12366928D0D2F1006D24BA /* LaunchScreen.storyboard */; };
+		9C12367928D0D48B006D24BA /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12367828D0D48B006D24BA /* Mobile.swift */; };
+		9C12367B28D0D544006D24BA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12367A28D0D543006D24BA /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9C12366728D0D2F1006D24BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C12366A28D0D2F1006D24BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C12366C28D0D2F1006D24BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C12367828D0D48B006D24BA /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		9C12367A28D0D543006D24BA /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,66 @@
 		9C12365A28D0D2F0006D24BA /* Exitek */ = {
 			isa = PBXGroup;
 			children = (
-				9C12365B28D0D2F0006D24BA /* AppDelegate.swift */,
-				9C12365D28D0D2F0006D24BA /* SceneDelegate.swift */,
-				9C12365F28D0D2F0006D24BA /* ViewController.swift */,
-				9C12366128D0D2F0006D24BA /* Main.storyboard */,
-				9C12366728D0D2F1006D24BA /* Assets.xcassets */,
-				9C12366928D0D2F1006D24BA /* LaunchScreen.storyboard */,
-				9C12366C28D0D2F1006D24BA /* Info.plist */,
-				9C12366428D0D2F0006D24BA /* Exitek.xcdatamodeld */,
+				9C12367528D0D3C6006D24BA /* App */,
+				9C12367328D0D3AA006D24BA /* ViewControllers */,
+				9C12367428D0D3B5006D24BA /* Storyboards */,
+				9C12367228D0D39C006D24BA /* Models */,
+				9C12367728D0D402006D24BA /* Services */,
+				9C12367628D0D3CB006D24BA /* Resources */,
 			);
 			path = Exitek;
+			sourceTree = "<group>";
+		};
+		9C12367228D0D39C006D24BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C12367828D0D48B006D24BA /* Mobile.swift */,
+				9C12366428D0D2F0006D24BA /* Exitek.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C12367328D0D3AA006D24BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C12365F28D0D2F0006D24BA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9C12367428D0D3B5006D24BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9C12366128D0D2F0006D24BA /* Main.storyboard */,
+				9C12366928D0D2F1006D24BA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9C12367528D0D3C6006D24BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9C12365B28D0D2F0006D24BA /* AppDelegate.swift */,
+				9C12365D28D0D2F0006D24BA /* SceneDelegate.swift */,
+				9C12366C28D0D2F1006D24BA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9C12367628D0D3CB006D24BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C12366728D0D2F1006D24BA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C12367728D0D402006D24BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C12367A28D0D543006D24BA /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C12367928D0D48B006D24BA /* Mobile.swift in Sources */,
 				9C12366028D0D2F0006D24BA /* ViewController.swift in Sources */,
 				9C12366628D0D2F0006D24BA /* Exitek.xcdatamodeld in Sources */,
+				9C12367B28D0D544006D24BA /* StorageManager.swift in Sources */,
 				9C12365C28D0D2F0006D24BA /* AppDelegate.swift in Sources */,
 				9C12365E28D0D2F0006D24BA /* SceneDelegate.swift in Sources */,
 			);
@@ -221,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,12 +351,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JCDM2HMWLU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Exitek/Info.plist;
+				INFOPLIST_FILE = Exitek/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,12 +380,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JCDM2HMWLU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Exitek/Info.plist;
+				INFOPLIST_FILE = Exitek/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
