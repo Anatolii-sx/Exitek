@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         // Delete device
         do {
             try StorageManager.shared.delete(mobile)
-            print("✅ Device deleted:", mobile)
         } catch {
             print(error)
         }

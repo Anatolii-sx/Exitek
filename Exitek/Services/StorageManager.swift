@@ -117,6 +117,7 @@ extension StorageManager: MobileStorage {
                 deviceDeleted = true
                 viewContext.delete(device)
                 saveContext()
+                print("✅ Device deleted:", product)
             }
         }
         if !deviceDeleted {
